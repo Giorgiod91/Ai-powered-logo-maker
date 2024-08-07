@@ -41,6 +41,7 @@ function AiLogoMaker({}: Props) {
           <label>Descripe how should your Logo look like:</label>
           <input
             type="text"
+            className="text-black"
             value={prompt}
             onChange={(e) => setPrompt(e.target.value)}
             required
@@ -55,15 +56,9 @@ function AiLogoMaker({}: Props) {
             <option disabled selected>
               What Size should the logo be ?
             </option>
-            <option>512x512</option>
-            <option>256x256</option>
+            <option className="text-black">512x512</option>
+            <option className="text-black">256x256</option>
           </select>
-          <input
-            type="text"
-            value={size}
-            onChange={(e) => setSize(e.target.value)}
-            required
-          />
         </div>
         <button type="submit">Generate Logo</button>
       </form>
