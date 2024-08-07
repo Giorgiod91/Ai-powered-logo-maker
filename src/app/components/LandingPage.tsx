@@ -13,12 +13,12 @@ function LandingPage({}: Props) {
             <h1 className="mb-4 bg-clip-text text-5xl font-black tracking-tight drop-shadow-xl sm:text-6xl md:text-7xl">
               InstaLogo AI{" "}
               <div
-                className="tooltip tooltip-open"
+                className="tooltip tooltip-open tracking-normal"
                 data-tip="this Logo was made with InstaLogo Ai"
               >
                 <button className="btn">
                   {" "}
-                  <img src="" />{" "}
+                  <img src="/logo1" />{" "}
                 </button>
               </div>
             </h1>
@@ -30,9 +30,6 @@ function LandingPage({}: Props) {
               logo directly. Get started now and design your brand's identity
               effortlessly!
             </p>
-            <button className="btn btn-wide mb-4">
-              <a href="#EventErstellen">Jetzt loslegen</a>
-            </button>
 
             <div className="mt-2 flex justify-center"></div>
           </div>
