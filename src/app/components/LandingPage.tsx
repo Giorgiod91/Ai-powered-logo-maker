@@ -16,10 +16,8 @@ function LandingPage({}: Props) {
                 className="tooltip tooltip-open tracking-normal"
                 data-tip="this Logo was made with InstaLogo Ai"
               >
-                <button className="btn">
-                  {" "}
-                  <img src="/logo1" />{" "}
-                </button>
+                {" "}
+                <img src="/logo1.png" width={55} height={55} />{" "}
               </div>
             </h1>
             <p className="mb-8 text-xl">
