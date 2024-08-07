@@ -48,13 +48,18 @@ function MythicPlusForm({}: Props) {
       <form onSubmit={handleSubmit}>
         <div>
           <label>Dungeon Name:</label>
-          <input
-            type="text"
-            className="text-black"
-            placeholder="Which Dungeon are you running?"
-            value={dungeonName}
+          <select
+            className="select select-primary w-full max-w-xs"
             onChange={(e) => setDungeonName(e.target.value)}
-          />
+          >
+            <option disabled selected>
+              What Dungeon are you looking for ?
+            </option>
+            <option>Ara-Kara</option>
+            <option>Necrotic Wake</option>
+            <option>Mist of Tirna</option>
+            <option>...</option>
+          </select>
         </div>
         <div>
           <label>Affixes:</label>
