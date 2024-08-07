@@ -1,8 +1,10 @@
-# AI Powered Mythic Dungeon Guide
+# AI Powered Logo Maker
 
 
 
 ## Overview
 
-- Mythic+ Dungeon Assistant is a python application that provides detailed guides for Mythic+ dungeons in World of Warcraft. It leverages the OpenAI API to generate strategies, optimal routes, and tips.
+-Custom Logo Generation: Users provide descriptions of their desired logos, and the AI generates logos based on the input.
+-Download Option: Users can download their generated logos.
+
 
