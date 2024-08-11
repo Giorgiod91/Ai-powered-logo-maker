@@ -1,9 +1,8 @@
-// app/api/proxy/route.ts
 import { NextResponse } from "next/server";
 import fetch from "node-fetch";
 
 export async function POST(request: Request) {
-  const API_URL = process.env.API_URL; // The external API URL
+  const API_URL = process.env.API_URL;
 
   try {
     const body = await request.json();
