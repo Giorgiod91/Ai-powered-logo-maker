@@ -11,6 +11,7 @@ function AiLogoMaker({}: Props) {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [ailogoMakerclicked, setAiLogoMakerClicked] = useState(false);
+  const API_URL = process.env.API_URL;
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -18,7 +19,7 @@ function AiLogoMaker({}: Props) {
     setError(null);
 
     try {
-      const response = await fetch("http://localhost:5000/get_logo", {
+      const response = await fetch("/api/proxy", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

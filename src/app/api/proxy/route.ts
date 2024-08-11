@@ -1,0 +1,27 @@
+// app/api/proxy/route.ts
+import { NextResponse } from "next/server";
+import fetch from "node-fetch";
+
+export async function POST(request: Request) {
+  const API_URL = process.env.API_URL; // The external API URL
+
+  try {
+    const body = await request.json();
+
+    const response = await fetch(API_URL!, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(body),
+    });
+
+    const data = await response.json();
+    return NextResponse.json(data, { status: response.status });
+  } catch (error) {
+    return NextResponse.json(
+      { error: "Failed to fetch data from API" },
+      { status: 500 },
+    );
+  }
+}
