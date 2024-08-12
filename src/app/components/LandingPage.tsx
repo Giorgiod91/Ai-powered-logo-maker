@@ -30,7 +30,7 @@ function LandingPage() {
               of your desired logo in the prompt field below and specify the
               size. Click Generate Logo and our AI will create a unique logo for
               you based on your input. Once generated, you can download the logo
-              directly. Get started now and design your brand's identity
+              directly. Get started now and design your brand is identity
               effortlessly!
             </p>
 

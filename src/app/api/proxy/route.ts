@@ -2,7 +2,9 @@ import { NextResponse } from "next/server";
 import fetch from "node-fetch";
 interface ApiResponse {
   success: boolean;
-  data?: any;
+  data?: {
+    image_url?: string;
+  };
   message?: string;
 }
 

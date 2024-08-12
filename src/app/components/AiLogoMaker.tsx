@@ -29,7 +29,7 @@ function AiLogoMaker() {
         body: JSON.stringify({ prompt, size }),
       });
 
-      const data: ApiResponse = await response.json();
+      const data: ApiResponse = (await response.json()) as ApiResponse;
       if (data.image_url) {
         setImageUrl(data.image_url);
         setAiLogoMakerClicked(true);
