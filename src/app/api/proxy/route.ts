@@ -8,7 +8,7 @@ export async function POST(request: Request) {
   const API_URL = process.env.API_URL;
 
   try {
-    const body = await request.json();
+    const body = (await request.json()) as { prompt: string; size: string };
 
     const response = await fetch(API_URL!, {
       method: "POST",
