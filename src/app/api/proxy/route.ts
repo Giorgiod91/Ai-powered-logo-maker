@@ -18,7 +18,7 @@ export async function POST(request: Request) {
       body: JSON.stringify(body),
     });
 
-    const data: ApiResponse = (await response.json()) as ApiResponse;
+    const data = await response.json();
     return NextResponse.json(data, { status: response.status });
   } catch (error) {
     return NextResponse.json(
