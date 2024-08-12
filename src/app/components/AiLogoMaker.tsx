@@ -2,12 +2,14 @@
 import React, { Children, useEffect } from "react";
 import { useState } from "react";
 
-type Props = {};
+interface ApiResponse {
+  image_url?: string;
+}
 
-function AiLogoMaker({}: Props) {
+function AiLogoMaker() {
   const [prompt, setPrompt] = useState("");
   const [size, setSize] = useState("512x512");
-  const [imageUrl, setImageUrl] = useState(null);
+  const [imageUrl, setImageUrl] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [ailogoMakerclicked, setAiLogoMakerClicked] = useState(false);
@@ -27,7 +29,7 @@ function AiLogoMaker({}: Props) {
         body: JSON.stringify({ prompt, size }),
       });
 
-      const data = await response.json();
+      const data: ApiResponse = await response.json();
       if (data.image_url) {
         setImageUrl(data.image_url);
         setAiLogoMakerClicked(true);

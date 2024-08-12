@@ -2,9 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import AiLogoMaker from "./AiLogoMaker";
 
-type Props = {};
-
-function LandingPage({}: Props) {
+function LandingPage() {
   return (
     <div className="h-screen bg-gradient-to-r from-blue-500 to-purple-600">
       <div className="container mx-auto flex h-screen flex-col p-5 md:flex-row">
@@ -30,9 +28,9 @@ function LandingPage({}: Props) {
             <p className="mb-8 text-xl text-white">
               Welcome to the AI-Powered Logo Maker! Simply enter a description
               of your desired logo in the prompt field below and specify the
-              size. Click "Generate Logo" and our AI will create a unique logo
-              for you based on your input. Once generated, you can download the
-              logo directly. Get started now and design your brand's identity
+              size. Click Generate Logo and our AI will create a unique logo for
+              you based on your input. Once generated, you can download the logo
+              directly. Get started now and design your brand's identity
               effortlessly!
             </p>
 
