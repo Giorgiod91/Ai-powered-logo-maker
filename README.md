@@ -15,3 +15,4 @@
 ## Tech i used 
 - next js for the frontend with tailwind css and Typrescript also used daisyui for some of the parts
 - used Python for the backend where i use the openai API and connected that to the frontend(my next.js app)
+- python part was deployed to GCP
