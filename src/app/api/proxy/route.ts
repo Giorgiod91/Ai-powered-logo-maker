@@ -21,7 +21,7 @@ export async function POST(request: Request) {
       },
       body: JSON.stringify(body),
     });
-
+    // @ts-ignore
     const data: ApiResponse = (await response.json()) as ApiResponse;
     return NextResponse.json(data, { status: response.status });
   } catch (error) {
