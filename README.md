@@ -1,6 +1,6 @@
 # InstaLogo AI
 
-![image](https://github.com/user-attachments/assets/94e521ff-26ba-474e-b7bd-d0655cd1a010)
+![image](https://github.com/user-attachments/assets/d7c85f35-4767-4df6-b3d3-d23b5c2fc62e)
 
 
 
