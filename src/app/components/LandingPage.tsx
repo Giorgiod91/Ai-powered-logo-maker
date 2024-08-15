@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { motion } from "framer-motion";
 import AiLogoMaker from "./AiLogoMaker";
@@ -44,6 +45,36 @@ function LandingPage() {
             <AiLogoMaker />
           </div>
         </div>
+      </div>
+      <div className="sticky bottom-0 flex w-full flex-col items-center justify-center bg-gray-100 p-4 shadow-lg md:flex-row md:p-6">
+        <motion.img
+          src="/image.png"
+          alt="Reactify.AI Preview"
+          className="mb-4 w-20 rounded-lg shadow-lg md:mb-0 md:mr-6"
+          initial={{ scale: 0.8, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 1, ease: "easeOut" }}
+          whileHover={{ scale: 1.05, rotate: 2 }}
+          whileTap={{ scale: 0.95, rotate: -2 }}
+        />
+        <div className="text-center md:text-left">
+          <h2 className="text-2xl font-bold text-blue-600 md:text-3xl">
+            Design React Components with Reactify.AI
+          </h2>
+          <p className="text-lg text-gray-700">
+            Elevate your front-end development process with our AI-powered tool.
+            Create, preview, and customize your React components effortlessly.
+          </p>
+        </div>
+        <motion.a
+          href="#get-started"
+          className="bg-bright-cyan mt-4 rounded bg-[#00B8D9] px-4 py-2 text-lg font-semibold text-white transition-transform duration-300 ease-in-out hover:scale-105 hover:bg-[#00A5C4] focus:outline-none focus:ring-4 focus:ring-[#00A5C4]/50 md:ml-auto md:mt-0"
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.95 }}
+          transition={{ type: "spring", stiffness: 300 }}
+        >
+          Explore Reactify.AI 🚀
+        </motion.a>
       </div>
     </div>
   );
