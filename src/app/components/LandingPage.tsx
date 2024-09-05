@@ -67,7 +67,7 @@ function LandingPage() {
           </p>
         </div>
         <motion.a
-          href="#get-started"
+          href="https://aicomponentgenerator-nine.vercel.app/"
           className="bg-bright-cyan mt-4 rounded bg-[#00B8D9] px-4 py-2 text-lg font-semibold text-white transition-transform duration-300 ease-in-out hover:scale-105 hover:bg-[#00A5C4] focus:outline-none focus:ring-4 focus:ring-[#00A5C4]/50 md:ml-auto md:mt-0"
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.95 }}
