@@ -75,7 +75,7 @@ function AiLogoMaker() {
               <option disabled selected>
                 What size should the logo be?
               </option>
-              <option value="512x512">512x512</option>
+
               <option value="256x256">256x256</option>
             </select>
           </div>
